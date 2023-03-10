@@ -467,6 +467,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-transform: uppercase;
   color: #050d18;
 }
 
@@ -481,7 +482,7 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  
+  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #102d55;
   margin-bottom: 10px;
