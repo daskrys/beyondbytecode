@@ -31,7 +31,7 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-laptop">Home</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-code">Portfolio</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-code">Projects</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-address-card">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-at">Contact</span></a></li>
 							</ul>
@@ -59,24 +59,39 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt"><strong>CHRISTIAN A. PEREZ</strong><br/></h2>
-								<p id="typewriter" class="alt"></p>
+								
+								<p id="typewriter1" class="alt"></p>
+								<h2 id="typewriter2" class="alt"><strong></strong></h2>
 
 								<script>
-								const text = "hello there. welcome to my website.";
-								let index = 0;
-								
-								function type() {
-								  const element = document.getElementById("typewriter");
-								  element.textContent += text[index];
-								  index++;
-								  if (index >= text.length) {
-									clearInterval(timerId);
-								  }
-								}
-								
-								const timerId = setInterval(type, 100);
+									function typewriter(elementId, text, typingSpeed = 100) {
+									let index = 0;
+
+									function type() {
+										const element = document.getElementById(elementId);
+										element.textContent += text[index];
+										index++;
+										if (index >= text.length) {
+										clearInterval(timerId);
+										}
+									}
+
+									const timerId = setInterval(type, typingSpeed);
+									}
+
+									const text1 = "hello there. my name is";
+									const text2 = "CHRISTIAN A. PEREZ";
+
+									typewriter("typewriter1", text1);
+									
+
+									const delay = text1.length * 100; // 100 is the typing speed for text1
+
+									setTimeout(() => {
+									typewriter("typewriter2", text2, 150);
+									}, delay);
 								</script>
+
 							</header>
 
 							<footer>
@@ -91,24 +106,24 @@
 						<div class="container">
 
 							<header>
-								<h2>Portfolio</h2>
+								<h2>Projects</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p></p>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="project1.html" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="project1.html"><img src="/images/NASA_logo.png" alt="Alternative text" width="200" height="200" class="img-fluid"></a>
+										<h4>Agriculture Rover</h4>
 										<header>
-											<h3>Agriculture Robot</h3>
-											<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-												egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-												Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-												fusce hendrerit lacus ridiculus.</p>
+											
+											<h3>The timeline for this project was 2 months. I worked on a team to design and create an Arduino based project. Program concluded with a presentation
+												at NASA Armstrong Flight Research Center. I was the programmer for this project. Our rover measured light
+												intensity, soil moisture, & temperature. Output was sent via bluetooth to an application on our Phone. 
+                                            </h3>
+										</header>
+											<button id="myButton" class="btn custom-btn">More Information</button>
 										</header>
 									</article>
 									<article class="item">
@@ -157,7 +172,7 @@
 
 							<header>
 								<h2>About Me</h2>
-								<p>I am actively seeking out job opportunities as well as finishing my junior year at </br> the University of California, Santa Cruz
+								<p>I am actively seeking job opportunities as well as finishing my junior year at </br> the University of California, Santa Cruz
 								</br> for a Bachelor of Science in Computer Science: Computer Game Design.</p>
 							</header>
 							<h2>Education</h2>
@@ -174,22 +189,15 @@
 								  <div class="col-sm">
 									
 									<h5>Orange Coast College</h5>
+									<h6><em>Computer Science, A.S.</br>May 2021</em></h6>
 								  </div>
 								  <div class="col-sm">
 									
 									<h5>University of California, Santa Cruz</h5>
-								  </div>
-								  
-								</div>
-								<div class="row">
-								  <div class="col-sm">
-									<h6><em>Computer Science, A.S.</br>May 2021</em></h6>
-								  </div>
-								  <div class="col-sm">
 									<h6><em>Computer Science: Computer Game Design, B.S.</br>June 2024</em></h6>
 								  </div>
 								</div>
-							  </div>
+							</div>
 							  	<img src="/images/occ.png" alt="Alternative text" width="150" height="200" class="img-fluid">
 								<img src="/images/ucsc.png" alt="Alternative text" width="100" height="100" class="img-fluid">
 							  <p><strong>Relevant Academic Coursework</strong></p>
@@ -232,11 +240,8 @@
 							<header>
 								<h2>Contact</h2>
 							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							
+							<p><a href="#contact"><span class="icon solid fa-envelope-open-text"> caperezl@ucsc.edu</span></a></p>
 						</div>
 					</section>
 			</div>
@@ -247,7 +252,7 @@
 				
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled.</li>
+						<li>&copy; Beyond Bytecode</li>
 					</ul>
 
 			</div>
@@ -262,6 +267,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="script.js"></script>
 
 	</body>
 </html>

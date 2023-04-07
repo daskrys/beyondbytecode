@@ -1955,7 +1955,7 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
 		border-radius: 0.35em;
-		color: #ffffff !important;
+		color: #666666 !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
 		background-color: #bfcecb;
@@ -1996,10 +1996,10 @@ input, select, textarea {
 	}
 
 		.item header {
-			background: #ececec;
+			background: #bfcecb;
 			margin: 0;
 			padding: 1em 0 1em 0;
-			font-size: 1em;
+			font-size: .8em;
 		}
 
 			.item header h3 {
@@ -2212,6 +2212,20 @@ input, select, textarea {
 					padding-left: 0;
 					margin-left: 0;
 				}
+
+/*Custom Button*/
+.custom-btn {
+	background-color: #a3b9ab !important;
+	border-color: #a3b9ab !important;
+	color: #666666 !important; 
+}
+  
+.custom-btn:hover {
+	background-color: #538064 !important;
+	border-color: #538064 !important;
+	color: #ffffff !important; 
+	 
+}
 
 /* Main */
 
