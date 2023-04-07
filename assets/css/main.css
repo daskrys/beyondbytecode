@@ -112,7 +112,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Arial", "Helvetica Neue", Helvetica, "Lucida Sans", Tahoma, Verdana, sans-serif;
 		color: #666666;
 		line-height: 1.5em;
 	}
@@ -204,7 +204,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table {
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Arial", "Helvetica Neue", Helvetica, "Lucida Sans", Tahoma, Verdana, sans-serif;
 		margin-bottom: 2em;
 		color: #666666
 	}
@@ -1969,7 +1969,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Arial", "Helvetica Neue", Helvetica, "Lucida Sans", Tahoma, Verdana, sans-serif;
 	}
 
 		input[type="button"]:hover,
