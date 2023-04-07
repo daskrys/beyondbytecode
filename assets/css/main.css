@@ -112,7 +112,8 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #ffffff;
+		font-family: cursive;
+		color: #666666;
 		line-height: 1.5em;
 	}
 
@@ -203,10 +204,17 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: cursive;
 		margin-bottom: 2em;
-		color: #ffffff
+		color: #666666
 	}
+		p.alt {
+			color: #ffffff;
+		}
+
+			p.alt strong {
+				color: #666;
+			}
 
 	br.clear {
 		clear: both;
@@ -1947,10 +1955,10 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
 		border-radius: 0.35em;
-		color: #fff !important;
+		color: #ffffff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #bfcecb;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1968,7 +1976,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #bfcecb;
 		}
 
 		input[type="button"]:active,
@@ -1987,10 +1995,10 @@ input, select, textarea {
 	}
 
 		.item header {
-			background: #fff;
+			background: #ececec;
 			margin: 0;
 			padding: 1em 0 1em 0;
-			font-size: 0.8em;
+			font-size: 1em;
 		}
 
 			.item header h3 {
@@ -2249,7 +2257,7 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
+				background-color: #bfcecb;
 				background-image: url("../../images/banner.jpg");
 			}
 
