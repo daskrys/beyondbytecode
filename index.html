@@ -30,10 +30,10 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-laptop">Home</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-code">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-address-card">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-at">Contact</span></a></li>
 							</ul>
 						</nav>
 
@@ -60,7 +60,23 @@
 
 							<header>
 								<h2 class="alt"><strong>CHRISTIAN A. PEREZ</strong><br/></h2>
-								<p class="alt">hello there, welcome to my portfolio website.</p>
+								<p id="typewriter" class="alt"></p>
+
+								<script>
+								const text = "hello there. welcome to my website.";
+								let index = 0;
+								
+								function type() {
+								  const element = document.getElementById("typewriter");
+								  element.textContent += text[index];
+								  index++;
+								  if (index >= text.length) {
+									clearInterval(timerId);
+								  }
+								}
+								
+								const timerId = setInterval(type, 100);
+								</script>
 							</header>
 
 							<footer>
@@ -89,6 +105,10 @@
 										<a href="project1.html" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 										<header>
 											<h3>Agriculture Robot</h3>
+											<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+												egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+												Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+												fusce hendrerit lacus ridiculus.</p>
 										</header>
 									</article>
 									<article class="item">
@@ -137,7 +157,8 @@
 
 							<header>
 								<h2>About Me</h2>
-								<p>I am currently a junior at the University of California, Santa Cruz and pursuing a Bachelor of Science in Computer Science: Computer Game Design.</p>
+								<p>I am actively seeking out job opportunities as well as finishing my junior year at </br> the University of California, Santa Cruz
+								</br> for a Bachelor of Science in Computer Science: Computer Game Design.</p>
 							</header>
 							<h2>Education</h2>
 							<div class="container">
@@ -171,38 +192,56 @@
 							  </div>
 							  	<img src="/images/occ.png" alt="Alternative text" width="150" height="200" class="img-fluid">
 								<img src="/images/ucsc.png" alt="Alternative text" width="100" height="100" class="img-fluid">
-							  <p><strong>Academic Coursework</strong></p>
+							  <p><strong>Relevant Academic Coursework</strong></p>
+							  <p><em>GPA: 3.54</em></p>
 							<div class="container">
 								<div class="row">
 								  <div class="col-md-6">
 									<ul>
-									  <li>Item 1</li>
-									  <li>Item 2</li>
-									  <li>Item 3</li>
-									  <li>Item 3</li>
-									  <li>Item 3</li>
-									  <li>Item 3</li>
+									  <ul>Differential Calculus</ul>
+									  <ul>Integral Caclulus</ul>
+									  <ul>Multivariable Caclulus</ul>
+									  <ul>Intro to Linear Algebra & Differential Equations</ul>
+									  <ul>Boolean Algebra</ul>
+									  <ul>Discrete Structures</ul>
+									  <ul>Calculus Based Physics: Mechanics</ul>
+									  <ul>JavaScript I</ul>
+									  <ul>JavaScript II</ul>
 									</ul>
 								  </div>
 								  <div class="col-md-6">
 									<ul>
-									  <li>Item 4</li>
-									  <li>Item 5</li>
-									  <li>Item 6</li>
-									  <li>Item 3</li>
-									  <li>Item 3</li>
-									  <li>Item 3</li>
+									  <ul>Data Structures & Algorithms</ul>
+									  <ul>Computer Architecture</ul>
+									  <ul>Advanced Programming</ul>
+									  <ul>Game Development Experience</ul>
+									  <ul>Game Design Experience</ul>
+									  <ul>Programming Coursework</ul>
+									  <ul>C++ Programming I</ul>
+									  <ul>C++ Programming II</ul>
+									  <ul>Java Programming I</ul>
 									</ul>
 								  </div>
 								</div>
 							  </div>
 						</div>
 					</section>
+					<section id="contact" class="four">
+						<div class="container">
 
-	
+							<header>
+								<h2>Contact</h2>
+							</header>
 
+							<p>Elementum sem parturient nulla quam placerat viverra
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+						</div>
+					</section>
 			</div>
-
+		
+		
 		<!-- Footer -->
 			<div id="footer">
 				
@@ -214,6 +253,8 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.0/core.min.js"></script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
