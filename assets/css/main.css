@@ -112,7 +112,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #ffffff;
 		line-height: 1.5em;
 	}
 
@@ -205,6 +205,7 @@ input, select, textarea {
 	p, ul, ol, dl, table {
 		font-family: 'Source Sans Pro', sans-serif;
 		margin-bottom: 2em;
+		color: #ffffff
 	}
 
 	br.clear {
