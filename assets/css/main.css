@@ -201,6 +201,7 @@ input, select, textarea {
 	p, ul, ol, dl, table {
 		font-family: "Arial", "Helvetica Neue", Helvetica, "Lucida Sans", Tahoma, Verdana, sans-serif;
 		margin-bottom: 2em;
+		font-size: .95em;
 		color: #313131
 	}
 		p.alt {
@@ -2221,6 +2222,8 @@ input, select, textarea {
 	color: #1b1b1b !important; 
 	 
 }
+
+  
 
 /* Main */
 
