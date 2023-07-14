@@ -11,9 +11,9 @@ class SceneZero extends Phaser.Scene {
         this.cameras.main.setBackgroundColor('#000000');
 
         this.textObject0 = this.add.text(
-            120, 
+            150, 
             350,
-            "click to progress", 
+            "Click to Start", 
             {
                 font: "50px Arial",
                 color: "#FFFFFF",
